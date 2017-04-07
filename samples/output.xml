@@ -1,0 +1,216 @@
+<testsuite name="test">
+  <testsuite name="Multipath judge criterion">
+    <testcase name="Check default setting of multipath.conf">
+      <preconditions><![CDATA[<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[<p>
+1. Fresh install VirtualStor 6.3</p>
+<p>
+2. Check default setting of multipath.conf </p>
+<p>
+</p>
+<p>
+</p>
+]]></actions>
+          <expectedresults><![CDATA[<p>
+1. The multipath.conf should allow all devices except for rbd device</p>
+<p>
+</p>
+<p>
+</p>
+]]></expectedresults>
+        </step>
+      </steps>
+      <keywords>
+        <keyword name="FAST"/>
+        <keyword name="FET"/>
+      </keywords>
+    </testcase>
+    <testcase name="Check default setting after upgrade">
+      <preconditions><![CDATA[<p>
+</p>
+<p>
+</p>
+]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[<p>
+1. Fresh install VirtualStor 6.1</p>
+<p>
+2. Upgrade from 6.1 to 6.2</p>
+<p>
+3. Check default setting of multipath.conf after upgrade</p>
+<p>
+</p>
+<p>
+</p>
+]]></actions>
+          <expectedresults><![CDATA[<p>
+1. The multipath.conf should allow all devices except for rbd device</p>
+<p>
+</p>
+<p>
+</p>
+]]></expectedresults>
+        </step>
+      </steps>
+      <keywords>
+        <keyword name="TOFT"/>
+        <keyword name="NOREGRESSION"/>
+      </keywords>
+    </testcase>
+    <testcase name="There is only one non-blacklisted path">
+      <preconditions><![CDATA[<p>
+1. Prepare external iSCSI LUN with only one path</p>
+<p>
+</p>
+<p>
+</p>
+]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[<p>
+1. Login UI, go to Host page and connect to external iSCSI LUN</p>
+<p>
+2. Type "lsblk" to check if this device is shown as dm-xxx</p>
+<p>
+3. Reboot the node and check again</p>
+<p>
+</p>
+<p>
+</p>
+]]></actions>
+          <expectedresults><![CDATA[<p>
+1. This device should not be shown as dm-xxx</p>
+<p>
+</p>
+<p>
+</p>
+]]></expectedresults>
+        </step>
+      </steps>
+      <keywords>
+        <keyword name="FAST"/>
+      </keywords>
+    </testcase>
+    <testcase name="There are two non-blacklisted paths">
+      <preconditions><![CDATA[<p>
+1. Prepare external iSCSI LUN with 2 paths</p>
+<p>
+</p>
+<p>
+</p>
+]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[<p>
+1. Login UI, go to Host page and connect to external iSCSI LUN from 2 paths</p>
+<p>
+2. Type "lsblk" to check if this device is shown as dm-xxx</p>
+<p>
+3. Reboot the node and check again</p>
+<p>
+</p>
+<p>
+</p>
+]]></actions>
+          <expectedresults><![CDATA[<p>
+1. This device should be shown as dm-xxx</p>
+<p>
+</p>
+<p>
+</p>
+]]></expectedresults>
+        </step>
+      </steps>
+      <keywords>
+        <keyword name="FAST"/>
+      </keywords>
+    </testcase>
+    <testcase name="There are two blacklisted paths">
+      <preconditions><![CDATA[<p>
+1. Prepare external iSCSI LUN with 2 paths</p>
+<p>
+</p>
+<p>
+</p>
+]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[<p>
+1. Login UI, go to Host page and connect to external iSCSI LUN from 2 paths</p>
+<p>
+2. Modify /etc/multipath.conf, add this device to blacklist</p>
+<p>
+3. Type "lsblk" to check if this device is shown as dm-xxx</p>
+<p>
+4. Reboot the node and check again</p>
+<p>
+</p>
+<p>
+</p>
+]]></actions>
+          <expectedresults><![CDATA[<p>
+1. This device should not be shown as dm-xxx</p>
+<p>
+</p>
+<p>
+</p>
+]]></expectedresults>
+        </step>
+      </steps>
+      <keywords>
+        <keyword name="FAST"/>
+      </keywords>
+    </testcase>
+    <testcase name="Check device after manually create multipath">
+      <preconditions><![CDATA[<p>
+1. Prepare external iSCSI LUN with only one path</p>
+<p>
+</p>
+<p>
+</p>
+]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[<p>
+1. Login UI, go to Host page and connect to external iSCSI LUN</p>
+<p>
+2. Manually create multipath by specifying a device</p>
+<p>
+3. Type "lsblk" to check if this device is shown as dm-xxx</p>
+<p>
+4. Reboot the node and check again</p>
+<p>
+</p>
+<p>
+</p>
+]]></actions>
+          <expectedresults><![CDATA[<p>
+1. This device should be shown as dm-xxx</p>
+<p>
+</p>
+<p>
+</p>
+]]></expectedresults>
+        </step>
+      </steps>
+      <keywords>
+        <keyword name="FAST"/>
+      </keywords>
+    </testcase>
+  </testsuite>
+</testsuite>

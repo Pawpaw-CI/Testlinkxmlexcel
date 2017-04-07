@@ -1,0 +1,1862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Statistics &amp; Logs" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite name="Dashboard" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="8144" name="Cluster IOPS">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[713]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Dashboard</p>
+<p>
+2. Check the widget "Cluster IOPS"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realistic data of recent 3 hours</p>
+<p>
+2. It refreshes every 1 minute</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8147" name="Cluster Throughput">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[714]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Dashboard</p>
+<p>
+2. Check the widget "Cluster Throughput"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realistic data of recent 3 hours</p>
+<p>
+2. It refreshes every 1 minute</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8150" name="Busy hosts">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[715]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Dashboard</p>
+<p>
+2. Check the widget "Busy Hosts"</p>
+<p>
+3. Drill down to check all hosts </p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realistic data of all hosts, and order from the busiest</p>
+<p>
+2. Step3 can drill down to hosts statistics page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8153" name="Busy virtual storages">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[716]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Dashboard</p>
+<p>
+2. Check the widget "Busy Virtual Storages"</p>
+<p>
+3. Drill down to check all virtual storages </p>
+<p>
+</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realistic data of all virtual storages, and order from the busiest</p>
+<p>
+2. Step3 can drill down to virtual storage statistics page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8156" name="UI layout adjust">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[717]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Dashboard</p>
+<p>
+2. Try to stretch/move/zoom widget</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Can stretch/move/zoom widget</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite name="Cluster statistic" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="8160" name="Cluster Disk Usage (Realtime View)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[718]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Statistic > Cluster page</p>
+<p>
+2. Check the widget "Cluster Disk Usage"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realtime data truly every 10s</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8163" name="Cluster IOPS (Realtime View)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[719]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Statistic > Cluster page</p>
+<p>
+2. Check the widget "Cluster IOPS"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realtime data truly every 10s</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8166" name="Cluster Throughput (Realtime View)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[720]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Statistic > Cluster page</p>
+<p>
+2. Check the widget "Cluster Throughput"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realtime data truly every 10s</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8169" name="Virtual Storage Disk Usage (Historical View)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[721]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Statistic > Cluster page</p>
+<p>
+2. Select "Historical View"</p>
+<p>
+3. Check the widget "Virtual Storage Disk Usage"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show the usage change of past hours</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8172" name="Cluster IOPS (Historical View)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[722]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Statistic > Cluster page</p>
+<p>
+2. Select "Historical View"</p>
+<p>
+3. Check the widget "Cluster IOPS"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Different time range has different resolution:</p>
+<p>
+24 hour <=> minute</p>
+<p>
+1 week <=> hour</p>
+<p>
+1 month <=> hour</p>
+<p>
+1 year  <=> day</p>
+<p>
+3 years <=> day</p>
+<p>
+2. The value is in accordance with real traffic</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8175" name="Cluster Throughput (Historical View)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[723]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Log in UI and go to Statistic > Cluster page</p>
+<p>
+2. Select "Historical View"</p>
+<p>
+3. Check the widget "Cluster Throughput"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Different time range has different resolution:</p>
+<p>
+24 hour <=> minute</p>
+<p>
+1 week <=> hour</p>
+<p>
+1 month <=> hour</p>
+<p>
+1 year  <=> day</p>
+<p>
+3 years <=> day</p>
+<p>
+2. The value is in accordance with real traffic</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite name="VirtualStorage statistic" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="8179" name="IOPS by virtual storage (Realtime View)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[724]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Virtual Storage Statistics > Realtime view > Show all virtual storages</p>
+<p>
+2. Check the widget "IOPS"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realtime data truly every 10s</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8182" name="Throughput by virtual storage (Realtime View)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[725]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Virtual Storage Statistics > Realtime view > Show all virtual storages</p>
+<p>
+2. Check the widget "Throughput"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realtime data truly every 10s</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8185" name="IOPS by protocol (Realtime View)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[726]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Virtual Storage Statistics > Realtime view > Show  virtual storages by protocol</p>
+<p>
+2. Check widget "IOPS" for each protocol</p>
+<p>
+3. Select other virtual storage and check by protocol</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realtime data truly every 10s</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8188" name="Throughput by protocol (Realtime View)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[727]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Virtual Storage Statistics > Realtime view > Show  virtual storages by protocol</p>
+<p>
+2. Check  widget "Throughput" for each protocol</p>
+<p>
+3. Select other virtual storage and check by protocol</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should show realtime data truly every 10s</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8191" name="IOPS By virtual storage (Historical View )">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[728]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Virtual Storage Statistics > Historical view > Show all virtual storage</p>
+<p>
+2. Select different time range</p>
+<p>
+3. Check resolution and value of widget "IOPS of virtual storage"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Different time range has different resolution:</p>
+<p>
+24 hour <=> minute</p>
+<p>
+1 week <=> hour</p>
+<p>
+1 month <=> hour</p>
+<p>
+1 year  <=> day</p>
+<p>
+3 years <=> day</p>
+<p>
+2. The value is in accordance with real traffic</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8194" name="Throughput By virtual storage (Historical View )">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[729]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Virtual Storage Statistics > Historical view > Show all virtual storage</p>
+<p>
+2. Select different time range</p>
+<p>
+3. Check resolution and value of widget "Throughput of virtual storage"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Different time range has different resolution:</p>
+<p>
+24 hour <=> minute</p>
+<p>
+1 week <=> hour</p>
+<p>
+1 month <=> hour</p>
+<p>
+1 year  <=> day</p>
+<p>
+3 years <=> day</p>
+<p>
+2. The value is in accordance with real traffic</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8197" name="IOPS by protocol (Historical View )">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[730]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Virtual Storage Statistics > Historical view > Show by protocols</p>
+<p>
+2. Select different time range</p>
+<p>
+3. Check resolution and value of widget "IOPS of virtual storage" for each protocol</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Different time range has different resolution:</p>
+<p>
+24 hour <=> minute</p>
+<p>
+1 week <=> hour</p>
+<p>
+1 month <=> hour</p>
+<p>
+1 year  <=> day</p>
+<p>
+3 years <=> day</p>
+<p>
+2. The value is in accordance with real traffic</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8200" name="Throughput by protocol (Historical View )">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[731]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Virtual Storage Statistics > Historical view > Show by protocols</p>
+<p>
+2. Select different time range</p>
+<p>
+3. Check resolution and value of widget "Throughput of virtual storage" for each protocol</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Different time range has different resolution:</p>
+<p>
+24 hour <=> minute</p>
+<p>
+1 week <=> hour</p>
+<p>
+1 month <=> hour</p>
+<p>
+1 year  <=> day</p>
+<p>
+3 years <=> day</p>
+<p>
+2. The value is in accordance with real traffic</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8203" name="Check latency of Samba protocol">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[732]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and works well</p>
+<p>
+2. One gateway is created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Create CIFS shared folder</p>
+<p>
+2. Access this shared folder from Windows client</p>
+<p>
+3. Use IOMeter to test latency when write files</p>
+<p>
+4. Go to Statistics > Virtual Storage > View by protocol, check widget for latency of samba protocol</p>
+<p>
+5. SSH login gateway node and type "smbstatus -P"</p>
+<p>
+6. Use IOMeter to test latency when read files</p>
+<p>
+7. Go to Statistics > Virtual Storage > View by protocol, check widget for latency of samba protocol</p>
+<p>
+8. SSH login gateway node and type "smbstatus -P"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. The widget should show correct latency as IOMeter tells</p>
+<p>
+2. The output should be the same as the result of formula below:</p>
+<p>
+Read Latency = (pread_time + read_time) / (pread_count + read_count)</p>
+<p>
+Write Latency = (pwrite_time + write_time) / (pwrite_count + write_count)</p>
+<p>
+The unit of read/write latency is microsecond.</p>
+<p>
+</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="TOFT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8206" name="Check latency of NFS protocol">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[733]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and works well</p>
+<p>
+2. One gateway is created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Create NFS shared folder</p>
+<p>
+2. Access this shared folder from Linux client</p>
+<p>
+3. Use Fio to test latency when write files</p>
+<p>
+4. Go to Statistics > Virtual Storage > View by protocol, check widget for latency of NFS protocol</p>
+<p>
+5. SSH login gateway node and type "cat /proc/net/rpc/nfsd"</p>
+<p>
+6. Use Fio to test latency when read files</p>
+<p>
+7. Go to Statistics > Virtual Storage > View by protocol, check widget for latency of NFS protocol</p>
+<p>
+8. SSH login gateway node and type "cat /proc/net/rpc/nfsd"</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. The widget should show correct latency as Fio tells</p>
+<p>
+2. The output should be the same as the result of formula below:</p>
+<p>
+io [Bytes Read] [Bytes Write] [Read OPs] [Write OPs] [Read Time] [Write Time]</p>
+<p>
+Read Latency =  [Read Time] / 1000000 / [Read OPs] </p>
+<p>
+Write Latency = [Write Time] / 1000000 / [Write OPs]</p>
+<p>
+The unit of read/write latency is microsecond.</p>
+<p>
+</p>
+<p>
+</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="TOFT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8209" name="Check latency of iSCSI protocol">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[734]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and works well</p>
+<p>
+2. One gateway is created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Create iSCSI LUN</p>
+<p>
+2. Access this LUN from Linux client</p>
+<p>
+3. Use Fio to test latency when write LUN</p>
+<p>
+4. Go to Statistics > Virtual Storage > View by protocol, check widget for latency of iSCSI protocol</p>
+<p>
+5. SSH login gateway node and type "cat /sys/kernel/scst_tgt/targets/iscsi/[Target Folder]/sessions/[Session ID]/latency" for each iSCSI session</p>
+<p>
+6. Use Fio to test latency when read LUN</p>
+<p>
+7. Go to Statistics > Virtual Storage > View by protocol, check widget for latency of iSCSI protocol</p>
+<p>
+8. SSH login gateway node and type "cat /sys/kernel/scst_tgt/targets/iscsi/[Target Folder]/sessions/[Session ID]/latency" for each iSCSI session</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. The widget should show correct latency as Fio tells</p>
+<p>
+2. The output should be the same as the result of formula below:</p>
+<p>
+Read Latency =  [Overall read] / 1000000</p>
+<p>
+Write Latency = [Overall write] / 1000000</p>
+<p>
+Will calculate the average value of all iSCSI sessions</p>
+<p>
+</p>
+<p>
+</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="TOFT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8212" name="Check latency of FC protocol">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[735]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and works well</p>
+<p>
+2. The node has FC card</p>
+<p>
+3. One gateway is created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Create FC LUN</p>
+<p>
+2. Access this LUN from Linux client</p>
+<p>
+3. Use Fio to test latency when write FC LUN</p>
+<p>
+4. Go to Statistics > Virtual Storage > View by protocol, check widget for latency of FC protocol</p>
+<p>
+5. SSH login gateway node and type "cat /sys/kernel/scst_tgt/targets/iscsi/[Target Folder]/sessions/[Session ID]/latency" for each FC session</p>
+<p>
+6. Use Fio to test latency when read FC LUN</p>
+<p>
+7. Go to Statistics > Virtual Storage > View by protocol, check widget for latency of FC protocol</p>
+<p>
+8. SSH login gateway node and type "cat /sys/kernel/scst_tgt/targets/qla2x00t/[Target Folder]/sessions/[Session ID]/latency" for each FC session</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. The widget should show correct latency as Fio tells</p>
+<p>
+2. The output should be the same as the result of formula below:</p>
+<p>
+Read Latency =  [Overall read] / 1000000</p>
+<p>
+Write Latency = [Overall write] / 1000000</p>
+<p>
+Will calculate the average value of all FC sessions</p>
+<p>
+</p>
+<p>
+</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="TOFT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8215" name="Check historical view of latency for virtual storage">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[736]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and works well</p>
+<p>
+2. The previous 4 test cases are executed</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistics > Virtual Storage > View by protocol</p>
+<p>
+2. Select historical view, check widget for latency</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Histoical data are coincident with past tests</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite name="Host statistic" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="8219" name="System status">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[737]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Host Statistics </p>
+<p>
+2. Check realtime status of the following resources:</p>
+<p>
+CPU </p>
+<p>
+MEM </p>
+<p>
+DISK </p>
+<p>
+NET </p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should reflect the real status of each node</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="RAT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8222" name="Status indicator">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[738]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Host Statistics </p>
+<p>
+2. Check realtime status of the following services:</p>
+<p>
+OSD</p>
+<p>
+GW</p>
+<p>
+RAID</p>
+<p>
+HA</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should reflect the real status of each node</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="RAT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8225" name="Check OSD status on host statistic page">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[739]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Host Statistics </p>
+<p>
+2. Check status of OSD in one host</p>
+<p>
+3. Stop one OSD in this host</p>
+<p>
+4. Go to Statistic  > Host Statistics </p>
+<p>
+5. Check status of this OSD</p>
+<p>
+6. Disable all OSDs in this host</p>
+<p>
+7. Go to Statistic  > Host Statistics </p>
+<p>
+8. Check status of this OSD</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Step2 shows OSD indicator is green</p>
+<p>
+2. Step5 shows OSD indicator is red</p>
+<p>
+3. Step8 shows OSD indicator is gray</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8228" name="Check GW status on host statistic page">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[740]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Enable gateway in all hosts</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Host Statistics </p>
+<p>
+2. Check status of GW in one host</p>
+<p>
+3. SSH login this host and stop ezfs-agent service</p>
+<p>
+4. Go to Statistic  > Host Statistics </p>
+<p>
+5. Check status of this GW</p>
+<p>
+6. Disable the gateway in this host</p>
+<p>
+7. Go to Statistic  > Host Statistics </p>
+<p>
+8. Check status of this GW</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Step2 shows GW indicator is green</p>
+<p>
+2. Step5 shows GW indicator is red</p>
+<p>
+3. Step8 shows GW indicator is gray</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8231" name="Host performance detail (Realtime view)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[741]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Host Statistics </p>
+<p>
+2. Click host IP link to drill down to detail window</p>
+<p>
+3. Select "Realtime View" and check widgets</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should reflect the real performance of resources every 10s</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8234" name="Host performance detail (Historical view)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[742]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Cluster is created and healthy</p>
+<p>
+2. Trigger IO traffic to cluster</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Statistic  > Host Statistics </p>
+<p>
+2. Click host IP link to drill down to detail window</p>
+<p>
+3. Select "Historical View" and check widgets in different time range:</p>
+<p>
+Last 24 hours</p>
+<p>
+Last 7 days</p>
+<p>
+Last 30 days</p>
+<p>
+Last 1 year </p>
+<p>
+Last 3 years</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Different time range has different resolution:</p>
+<p>
+24 hour <=> minute</p>
+<p>
+1 week <=> hour</p>
+<p>
+1 month <=> hour</p>
+<p>
+1 year  <=> day</p>
+<p>
+3 years <=> day</p>
+<p>
+2. The value is in accordance with real traffic</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite name="Log query/export" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="8238" name="Check log when query all">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[743]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare plenty of logs</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Cluster > Logs, click button "Query Logs"</p>
+<p>
+2. Select "Query all"</p>
+<p>
+3. Check printed logs</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should print all logs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="RAT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8241" name="Check log when query by severities">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[744]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare logs with different severities</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Cluster > Logs, click button "Query Logs"</p>
+<p>
+2. Select "Query by severities"</p>
+<p>
+3. Select different severities</p>
+<p>
+4. Check printed logs</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should print logs with corresponding severities</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8244" name="Check log when query by categories">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[745]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare logs with different categories</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Cluster > Logs, click button "Query Logs"</p>
+<p>
+2. Select "Query by categories"</p>
+<p>
+3. Select different categories</p>
+<p>
+4. Check printed logs</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should print logs with corresponding categories</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8247" name="Check log when query by events">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[746]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare plenty of logs</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Cluster > Logs, click button "Query Logs"</p>
+<p>
+2. Select "Query by events"</p>
+<p>
+3. Select different categories</p>
+<p>
+4. Multiple select some events</p>
+<p>
+5. Click query and check printed logs</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should print logs with corresponding events</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8250" name="Can drill down the details of logs">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[747]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Trigger slow request logs</p>
+<p>
+2. Go to Cluster->Logs page</p>
+<p>
+3. Click "Query Logs" button</p>
+<p>
+4. Select "Cluster Monitoring"->"Slow Request"</p>
+<p>
+5. Click "Query" button</p>
+<p>
+6. Click details link of the log</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. Should show detailed info of this log</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8253" name="UI pops float window for events">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[748]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Virtual Storages->NAS page</p>
+<p>
+2. Create a new NAS folder</p>
+<p>
+3. Check UI</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. There is a float window poping up and it should show corrct info and time</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8256" name="Check if notify after EXT4 error">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[749]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Use dd to ruin filesystem to trigger EXT4 error</p>
+<p>
+2. Check if there is notification event in UI</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. There is notification of EXT4 error in UI</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="TOFT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8259" name="Check if it has high severity event after EXT4 error">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[750]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Use dd to ruin filesystem to trigger EXT4 error</p>
+<p>
+	2. Go to Cluster &gt; Logs page</p>
+<p>
+	3. Query logs with &quot;error&quot; severity</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. It should query out EXT4 error logs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="TOFT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8262" name="UI should show WARNING and ERROR logs by default">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[751]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare WARNING and ERROR logs</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Go to Cluster &gt; Logs</p>
+<p>
+	2. Check logs display by default</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. UI should show WARNING and ERROR logs by default</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="TOFT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8265" name="It should flush ezcentral.cache into rados when open Logs page">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[752]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Logout and login web UI</p>
+<p>
+	2. Check log /var/log/ezcloudstor/ezcentral.cache</p>
+<p>
+	3. Go to Cluster &gt; Logs page</p>
+<p>
+	4. Check log /var/log/ezcloudstor/ezcentral.cache</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. It should flush ezcentral.cache into rados</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="TOFT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8268" name="Save log if select &quot;Export queried log to a zip file&quot;">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[753]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare plenty of logs</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Cluster > Logs, click button "Query Logs"</p>
+<p>
+2. Select "Query all"</p>
+<p>
+3. Select "Export queried log to a zip file"</p>
+<p>
+4. Check exported log</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. It should save the related log as zip file</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="RAT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8271" name="Filename input check (Too long, too short, invalid value)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[754]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare plenty of logs</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Go to Cluster &gt; Logs, click button &quot;Query Logs&quot;</p>
+<p>
+	2. Select &quot;Query all&quot;</p>
+<p>
+	3. Select &quot;Export queried log to a zip file&quot; and input name with length of 65</p>
+<p>
+	4. Select &quot;Export queried log to a zip file&quot; and input name with length of 5</p>
+<p>
+	5. Select &quot;Export queried log to a zip file&quot; and input name &quot;中文名字&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. It should not allow user to input those invalid names</p>
+<p>
+	2. Only allow 6-64 byte, a-z, A-Z, - and _</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FET"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8274" name="Check &quot;Exported logs&quot;">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[755]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare plenty of logs</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Cluster > Logs, click button "Query Logs"</p>
+<p>
+2. Select "Query all"</p>
+<p>
+3. Select "Export queried log to a zip file" </p>
+<p>
+4. Check  the table columns of "Exported logs": Create Time, Export Name, Size</p>
+<p>
+5. Query all logs with some severities</p>
+<p>
+6. Select "Export queried log to a zip file" </p>
+<p>
+7. Check  the table columns of "Exported logs": Create Time, Export Name, Size</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. The table shows right values for the zip files</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="TOFT"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8277" name="Download log zip file">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[756]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare plenty of logs</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Cluster > Logs, click button "Query Logs"</p>
+<p>
+2. Select "Query all"</p>
+<p>
+3. Select "Export queried log to a zip file"</p>
+<p>
+4. Download exported log</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. The downloaded zip file includes all logs</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8280" name="Check log in zip file">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[757]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare plenty of logs</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Cluster > Logs, click button "Query Logs"</p>
+<p>
+2. Select "Query all"</p>
+<p>
+3. Select "Export queried log to a zip file"</p>
+<p>
+4. Download exported log</p>
+<p>
+5. Check log files in zip</p>
+<p>
+6. Check all columns in logs</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. The logs are the same as query result from UI</p>
+<p>
+2. The logs inlude below columns:</p>
+<p>
+log_time</p>
+<p>
+log_level</p>
+<p>
+log_host</p>
+<p>
+log_category</p>
+<p>
+log_event</p>
+<p>
+log_id</p>
+<p>
+log_data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="8283" name="Delete log zip file">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[758]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+1. Prepare plenty of logs</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+1. Go to Cluster > Logs, click button "Query Logs"</p>
+<p>
+2. Select "Query all"</p>
+<p>
+3. Select "Export queried log to a zip file"</p>
+<p>
+4. Delete exported log</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+1. The exported zip file is deleted</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="FAST"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite></testsuite>
