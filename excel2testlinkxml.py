@@ -7,32 +7,38 @@ from lxml import etree
 
 
 input=raw_input("Input file name:")
-test_suite_name=raw_input("Input test suite name:")
-if test_suite_name=='':
-    test_suite_name="Gateway VM Deployment"
+# test_suite_name=raw_input("Input test suite name:")
+# if test_suite_name=='':
+    # test_suite_name="Gateway VM Deployment"
 
 f_in = xlrd.open_workbook(input)
 sheet = f_in.sheet_by_index(0)
 
 # create XML
-testsuite = etree.Element('testsuite', name=test_suite_name)
+#testsuite = etree.Element('testsuite', name=test_suite_name)
+
+xmlroot = None
 
 for seq in range(1, sheet.nrows):
     # print(sheet.row_values(seq))
     print seq
     try:
-        sec_ = sheet.row_values(seq)[0]
-        name_ = sheet.row_values(seq)[1]
+        suite_ = sheet.row_values(seq)[0]
+        case_ = sheet.row_values(seq)[1]
         pre_ = sheet.row_values(seq)[2]
         step_ = sheet.row_values(seq)[3]
         expect_ = sheet.row_values(seq)[4]
         keywords_ = sheet.row_values(seq)[5]
         
         
-        if sec_ != '':
-            testsuite_ = etree.SubElement(testsuite, 'testsuite', name=sec_)
+        if suite_ != '':
+            if xmlroot == None:
+                xmlroot = etree.Element('testsuite', name=suite_)
+                testsuite_ = xmlroot
+            else:
+                testsuite_ = etree.SubElement(xmlroot, 'testsuite', name=suite_)
             continue
-        if name_ == '':
+        if case_ == '':
             continue
         
         # To make lines
@@ -40,7 +46,7 @@ for seq in range(1, sheet.nrows):
         step_ = '<![CDATA[<p>\n' + step_.replace('\n','</p>\n<p>\n') + '</p>\n]]>'
         expect_ = '<![CDATA[<p>\n' + expect_.replace('\n','</p>\n<p>\n') + '</p>\n]]>'
         
-        test_case = etree.SubElement(testsuite_, 'testcase', name=name_)
+        test_case = etree.SubElement(testsuite_, 'testcase', name=case_)
         preconditions = etree.SubElement(test_case, 'preconditions')
         preconditions.text = u'{0}'.format(pre_)
         steps = etree.SubElement(test_case, 'steps')
@@ -61,7 +67,7 @@ for seq in range(1, sheet.nrows):
         for item in sys.exc_info():
             print item
 
-s = etree.tostring(testsuite, pretty_print=True)
+s = etree.tostring(xmlroot, pretty_print=True)
 s = s.replace('&lt;', '<')   # 临时强制修改，将来碰到内容中包含大于小于的可能会导致XML格式错误，导入失败。
 s = s.replace('&gt;', '>')
 f_out = open('output.xml', 'w')

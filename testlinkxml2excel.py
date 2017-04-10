@@ -1,16 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import argparse
-import textwrap
-import sys
 
 import re
 from collections import OrderedDict
 from xlwt import Workbook
 from lxml import etree
 
-pattern = re.compile(r'</p>|<p>\n')
+pattern = re.compile(r'<p>\n</p>\n|</p>|<p>\n')
 
 
 class XML2ExcelManager:
@@ -18,11 +15,11 @@ class XML2ExcelManager:
     def __init__(self, xml_file_name):
         self._tree = etree.parse(xml_file_name)
         self.root = self._tree.getroot()
-        #suite_depth = 0
+#        suite_depth = 0
         self.content = []
         
     def xmlnode_to_list(self, node):
-        dict = (
+        columns = (
            ("suitename", ""),
            ("casename", ""),
            ("preconditions", ""),
@@ -31,7 +28,7 @@ class XML2ExcelManager:
            ("keywords", ""),
            ("caseid", "")
         )
-        line = OrderedDict(dict)
+        line = OrderedDict(columns)
         if node.tag == 'testsuite':
             line["suitename"] = node.get("name")
             self.content.append(line)
@@ -39,8 +36,10 @@ class XML2ExcelManager:
             line["casename"] = node.get("name")
             line["caseid"] = node.find("externalid").text
             line["preconditions"] = node.find("preconditions").text
-            line["steps"] = node.find("steps/step/actions").text
-            line["expected"] = node.find("steps/step/expectedresults").text
+            line["steps"] = node.find("steps/step/actions").text \
+                if node.find("steps/step/actions") is not None else ""
+            line["expected"] = node.find("steps/step/expectedresults").text \
+                if node.find("steps/step/expectedresults") is not None else ""
             line["keywords"] = []
             for keyword in node.findall("keywords/keyword"):
                 line["keywords"].append(keyword.get("name"))
@@ -60,7 +59,7 @@ class XML2ExcelManager:
             row = sheet1.row(i+1)  # Offset for title
             for idx, key in enumerate(self.content[i]):
                 val = self.content[i][key]
-                if key!="keywords": # Because keywords is list, not string
+                if key != "keywords":  # Because keywords is list, not string
                     val = pattern.sub('', val)
                 else:
                     val = '\n'.join(val)
@@ -68,8 +67,7 @@ class XML2ExcelManager:
         excel.save(excel_file_name)
 
 if __name__ == '__main__':
-    input=raw_input("Input excel name:")
-    xem = XML2ExcelManager(input)
+    f_xml = raw_input("Input xml name:")
+    xem = XML2ExcelManager(f_xml)
     xem.xmlnode_to_list(xem.root)
     xem.write_list_to_excel('output.xls')
-
